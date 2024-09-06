@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+<style>
+  .cl1{
+    text-decoration: line-through;
+    color:#6E6E6E;
+  }
+
+  .card_12 ,.cards1{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+</style>  
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Remix Icon -->
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Jquery -->
+
+
+     <!-- Navigation Bar -->
+     <div class="nav_bar w-full  h-[80px] flex justify-between items-center px-[20px] border-b-2 border-black">
+       
+       <div class="nav_left w-[200px] sm:w-[150px] h-[100%]  flex justify-center items-center">
+         <img src="./Photo/Logo Here.svg" class="cursor-pointer" alt="">
+        </div>
+        
+        <div class="nav_center w-auto h-[100%] hidden  md:flex justify-center items-center gap-[40px] text-xl">
+          
+          <div class="hover:text-[#7BBA26] hover:cursor-pointer">Home</div>
+          <div class="hover:text-[#7BBA26] hover:cursor-pointer">Store</div>
+          <div class="hover:text-[#7BBA26] hover:cursor-pointer">About Us</div>
+          <div class="hover:text-[#7BBA26] hover:cursor-pointer">Blog</div>
+          <div class="hover:text-[#7BBA26] hover:cursor-pointer">Contact</div>
+          
+        </div>
+        
+        <div class="nav_right  w-auto h-[100%] hidden lg:flex justify-center items-center gap-[20px]">
+          
+          <div class="p-[6px_10px] bg-[#9ae78b] rounded-[50px] font-bold"><i class="ri-heart-line"></i></div>
+          <div class="p-[6px_10px] bg-[#9ae78b] rounded-[50px] font-bold"><i class="ri-search-line"></i></div>
+          <div class="p-[6px_10px] bg-[#9ae78b] rounded-[50px] font-bold"><i class="ri-shopping-cart-line"></i></div>
+          <div class="w-[100px] flex justify-center items-center rounded-[10px] p-[5px_14px] hover:text-[#7BBA26] hover:border-2 hover:border-[#7BBA26]">Sign Up</div>
+          <div class="bg-[#7BBA26] p-[5px_8px]  w-[80px] text-white text-center rounded-[10px] hover:bg-transparent hover:border-2 hover:border-[#7BBA26] hover:text-[#7BBA26]">Login</div>
+          
+        </div>
+
+        <div class="menu_bar w-[150px] h-[100%] md:hidden flex justify-end items-center text-3xl font-bold">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+
+      <div class="side_navigation w-full h-auto   flex justify-center items-center flex-col">
+
+        <div class="w-full p-[20px_4px]  border-b-2 border-black   flex justify-center items-center text-xl hover:bg-black hover:text-white">Home</div>
+        <div class="w-full p-[20px_4px]  border-b-2 border-black  flex justify-center items-center text-xl hover:bg-black hover:text-white">Store</div>
+        <div class="w-full p-[20px_4px]  border-b-2 border-black  flex justify-center items-center text-xl hover:bg-black hover:text-white">About Us</div>
+        <div class="w-full p-[20px_4px]  border-b-2 border-black  flex justify-center items-center text-xl hover:bg-black hover:text-white">Blog</div>
+        <div class="w-full p-[20px_4px]  border-b-2 border-black  flex justify-center items-center text-xl hover:bg-black hover:text-white">Contact</div>
+
+
+      </div>
+      
+      <!-- Navigation Bar -->
+
+      <!-- Hero Section  -->
+       <div class="hero_section w-full h-[90vh] sm:h-[50vh] md:h-[40vh] lg:h-[90vh]  sm:flex">
+        <div class="hero_left w-[100%] h-[50%] sm:w-[50%]  md:w-[50%] lg:w-[50%] sm:h-[100%] md:h-[100%] lg:h-[100%]  flex justify-center items-center">
+                <div class="main_container w-[100%] px-[10px] sm:w-[100%] sm:px-[10px] md:px-[10px] h-[100%] sm:h-[100%] md:h-[100%] lg:h-[95%]  flex flex-col justify-center items-center gap-[15px] sm:gap-[15px] md:gap-[15px] lg:gap-[40px]">
+                       <div class="text-center text-4xl w-[100%] sm:text-4xl md:text-4xl  lg:text-6xl font-bold md:text-left text-[#173748] lg:px-[10px]">Order Your <span class="text-[#7BBA26]">Organic Food</span>  Anytime</div>
+                       <div class="md:text-left text-center lg:w-[90%] lg:text-2xl lg:text-center text-gray-500">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </div>
+                       <div class="w-[120px] sm:w-[130px] md:w-[130px] lg:w-[150px] p-[8px_5px] sm:p-[8px_5px] md:p-[8px_3px] lg:p-[10px_5px] text-center rounded-[10px] bg-[#7BBA26] text-white hover:bg-transparent hover:border-2 hover:border-[#7BBA26] hover:text-[#7BBA26]">Explore More</div>
+                </div>
+        </div>
+        <div class="hero_right w-[100%] h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%] md:h-[100%] lg:h-[100%] flex justify-center items-center">
+          <img src="./Photo/pngegg (19) 1.png" class="w-[100%] h-[100%] lg:w-[85%] lg:h-[85%] object-contain" alt="">
+        </div>
+       </div>
+      <!-- Hero Section  -->
+
+      <!-- Section 1 -->
+       <div class="w-full h-auto ">
+               <div class="w-[100%] h-auto m-auto flex justify-center items-center gap-[30px] flex-wrap">
+                  <div class="w-[250px] h-[130px]  flex flex-col justify-center items-center">
+                      <img src="./Photo/open-24-hours.png" class="w-[70px] h-[70px]" alt="">
+                      <div class="text-2xl font-semibold">
+                      24/7 Service
+                    </div>
+                  </div>
+                  <div class="w-[250px] h-[130px]  flex flex-col justify-center items-center">
+                      <img src="./Photo/fast 1.png" class="w-[70px] h-[70px]" alt="">
+                      <div class="text-2xl font-semibold">
+                        Fast Delivery
+                    </div>
+                  </div>
+                  <div class="w-[250px] h-[130px]  flex flex-col justify-center items-center">
+                      <img src="./Photo/Purchase.png" class="w-[70px] h-[70px]" alt="">
+                      <div class="text-2xl font-semibold">
+                        15 Days Return Policy
+                    </div>
+                  </div>
+                  <div class="w-[250px] h-[130px]  flex flex-col justify-center items-center">
+                      <img src="./Photo/Money.png" class="w-[70px] h-[70px]" alt="">
+                      <div class="text-2xl font-semibold">
+                        100% Secure Payment
+                    </div>
+                  </div>
+               </div>
+       </div>
+      <!-- Section 1 -->
+
+      <!-- Section 2 -->
+         <div class="section_2 w-full h-auto py-[20px]">
+          <div class="main_container w-[100%] h-[100%] m-auto flex flex-col justify-center items-center gap-[15px_0px]">
+            <div class="text-5xl font-semibold text-[#173748]">New Offers</div>
+            <div class="nav_links flex justify-center items-center flex-wrap gap-[10px_40px] text-xl">
+              <div class="text-[#7BBA26] font-semiboldhover:text-[#7BBA26] cursor-pointer">Fruit</div>
+              <div class="hover:text-[#7BBA26] cursor-pointer">Vegetable</div>
+              <div class="hover:text-[#7BBA26] cursor-pointer">Salad</div>
+              <div class="hover:text-[#7BBA26] cursor-pointer">Dry-Fruit</div>
+              <div class="hover:text-[#7BBA26] cursor-pointer">Meat</div>
+              <div class="hover:text-[#7BBA26] cursor-pointer">All</div>                                 
+            </div>
+          </div>
+         </div>
+      <!-- Section 2 -->
+
+      <!-- Section 3 -->
+       <div class="main_container1 w-full h-auto  my-[15px] px-[20px]">
+           <div class="row_1 w-[100%] h-[100%]  m-auto flex flex-wrap justify-center items-center gap-[35px]">
+                 <div class="card_1 w-[260px] h-[300px] border-2 border-gray-500 rounded-[10px]">
+                  <div class="upper w-full h-[200px] flex justify-center items-center">
+                    <img src="./Photo/Untitled (1).png" class="" alt="">
+                  </div>
+                  <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                      <h2 class="text-2xl">Red Strawberry</h2>
+                      <div><span class="cl1 text-xl">$25.00</span>&nbsp;&nbsp;&nbsp;<span class="text-[#7BBA26] font-semibold text-xl">$15.00</span></div>
+                  </div>
+                 </div>
+                 <div class="card_1 w-[260px] h-[300px]  border-2 border-gray-500 rounded-[10px]">
+                  <div class="upper w-full h-[200px] flex justify-center items-center">
+                    <img src="./Photo/Final.png" alt="">
+                  </div>
+                  <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                      <h2 class="text-2xl">Sweet Cherry</h2>
+                      <div><span class="cl1 text-xl">$25.00</span>&nbsp;&nbsp;&nbsp;<span class="text-[#7BBA26] font-semibold text-xl">$15.00</span></div>
+                  </div>
+                 </div>
+                 <div class="card_1 w-[260px] h-[300px] border-2 border-gray-500 rounded-[10px]">
+                  <div class="upper w-full h-[200px] flex justify-center items-center">
+                    <img src="./Photo/Group 1.svg" alt="">
+                  </div>
+                  <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                      <h2 class="text-2xl">Red Respberry</h2>
+                      <div><span class="cl1 text-xl">$25.00</span>&nbsp;&nbsp;&nbsp;<span class="text-[#7BBA26] font-semibold text-xl">$15.00</span></div>
+                  </div>
+                 </div>
+                 <div class="card_1 w-[260px] h-[300px] border-2 border-gray-500 rounded-[10px]">
+                  <div class="upper w-full h-[200px] flex justify-center items-center">
+                    <img src="./Photo/Untitled (1).png" alt="">
+                  </div>
+                  <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                      <h2 class="text-2xl">Red Strawberry</h2>
+                      <div><span class="cl1 text-xl">$25.00</span>&nbsp;&nbsp;&nbsp;<span class="text-[#7BBA26] font-semibold text-xl">$15.00</span></div>
+                  </div>
+                 </div>
+                 <div class="card_1 w-[260px] h-[300px] border-2 border-gray-500 rounded-[10px]">
+                  <div class="upper w-full h-[200px] flex justify-center items-center">
+                    <img src="./Photo/Untitled (3).png" alt="">
+                  </div>
+                  <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                      <h2 class="text-2xl">Watermelon</h2>
+                      <div><span class="cl1 text-xl">$25.00</span>&nbsp;&nbsp;&nbsp;<span class="text-[#7BBA26] font-semibold text-xl">$15.00</span></div>
+                  </div>
+                 </div>
+                 <div class="card_1 w-[260px] h-[300px] border-2 border-gray-500 rounded-[10px]">
+                  <div class="upper w-full h-[200px] flex justify-center items-center">
+                    <img src="./Photo/Untitled (4).png" alt="">
+                  </div>
+                  <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                      <h2 class="text-2xl">Dragon Fruit</h2>
+                      <div><span class="cl1 text-xl">$25.00</span>&nbsp;&nbsp;&nbsp;<span class="text-[#7BBA26] font-semibold text-xl">$15.00</span></div>
+                  </div>
+                 </div>
+                 <div class="card_1 w-[260px] h-[300px] border-2 border-gray-500 rounded-[10px]">
+                  <div class="upper w-full h-[200px] flex justify-center items-center">
+                    <img src="./Photo/Untitled (6).png" alt="">
+                  </div>
+                  <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                      <h2 class="text-2xl">Pineapple</h2>
+                      <div><span class="cl1 text-xl">$25.00</span>&nbsp;&nbsp;&nbsp;<span class="text-[#7BBA26] font-semibold text-xl">$15.00</span></div>
+                  </div>
+                 </div>
+                 <div class="card_1 w-[260px] h-[300px] border-2 border-gray-500 rounded-[10px]">
+                  <div class="upper w-full h-[200px] flex justify-center items-center">
+                    <img src="./Photo/Untitled (5).png" alt="">
+                  </div>
+                  <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                      <h2 class="text-2xl">Grapes</h2>
+                      <div><span class="cl1 text-xl">$25.00</span>&nbsp;&nbsp;&nbsp;<span class="text-[#7BBA26] font-semibold text-xl">$15.00</span></div>
+                  </div>
+                 </div>
+           </div>
+       </div>
+      <!-- Section 3 -->
+
+      <!-- Section 4 -->
+       <div class="w-full h-[100px] my-[5px] flex justify-center items-center">
+              <span class="w-[200px] h-[50px] text-center text-xl text-white bg-[#7BBA26] rounded-[10px] flex justify-center items-center hover:bg-transparent hover:border-2 hover:border-[#7BBA26] hover:text-[#7BBA26]">Load More</span>
+       </div>
+      <!-- Section 4 -->
+
+      <!-- Section 5 -->
+      <div class="section_2 w-full my-[5px] h-auto py-[20px]">
+        <div class="main_container w-[100%] h-[100%] m-auto flex flex-col justify-center items-center gap-[15px_0px]">
+          <div class="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-[#173748]">Featured Products</div>
+          <div class="sm:text-2xl md:text-2xl lg:text-2xl text-center text-gray-500">
+            We Connect buyers & Sellers of Natural, Organic, Enviornmetnlly sound products.                               
+          </div>
+        </div>
+       </div>
+      <!-- Section 5 -->
+      
+      <!-- Section 6 -->
+      <div class="main_container1 w-full h-auto  m-[25px_0px] px-[20px]">
+        <div class="row_1 w-[100%] h-[100%]  m-auto flex flex-wrap justify-center items-center gap-[35px]">
+              <div class="card_12 w-[260px] h-[300px]">
+               <div class="upper w-full h-[200px] flex justify-center items-start">
+                 <img src="./Photo/img - 1.png" class="object-cover" alt="">
+               </div>
+               <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                   <h2 class="text-2xl">Fresh Fruit</h2>
+                   <div><span class="text-xl text-[#173748] font-semibold">$ 8.00 - $ 22.00</div>
+               </div>
+              </div>
+              <div class="card_12 w-[260px] h-[300px]">
+               <div class="upper w-full h-[200px] flex justify-center items-start">
+                 <img src="./Photo/img.png" class="object-cover" alt="">
+               </div>
+               <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                   <h2 class="text-2xl">Fresh Dry Fruit</h2>
+                   <div><span class="text-xl text-[#173748] font-semibold">$ 8.00 - $ 22.00</div>
+               </div>
+              </div>
+              <div class="card_12 w-[260px] h-[300px]">
+               <div class="upper w-full h-[200px] flex justify-center items-start">
+                 <img src="./Photo/img 2.png" class="object-cover" alt="">
+               </div>
+               <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                   <h2 class="text-2xl">Fresh Salad</h2>
+                   <div><span class="text-xl text-[#173748] font-semibold">$ 8.00 - $ 22.00</div>
+               </div>
+              </div>
+              <div class="card_12 w-[260px] h-[300px]">
+               <div class="upper w-full h-[200px] flex justify-center items-start">
+                 <img src="./Photo/img 3.png" class="object-cover" alt="">
+               </div>
+               <div class="lower w-[100%] h-[100px]  flex gap-[5px_0px] flex-col justify-center items-center">
+                   <h2 class="text-2xl">Oragnic Vegetables</h2>
+                   <div><span class="text-xl text-[#173748] font-semibold">$ 8.00 - $ 22.00</div>               </div>
+              </div>
+              </div>
+              </div>
+      <!-- Section 6 -->
+
+      <!--Section 7  -->
+      <div class="section_2 w-full my-[5px] h-auto py-[20px]">
+        <div class="main_container w-[100%] h-[100%] m-auto flex flex-col justify-center items-center gap-[15px_0px]">
+          <div class="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-[#173748]">Deal of The Day</div>
+          <div class="sm:text-2xl md:text-2xl lg:text-2xl text-center text-gray-500">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.                              
+          </div>
+        </div>
+       </div>
+      <!--Section 7  -->
+
+      <!-- Section 9 -->
+       <div class="w-full h-auto my-[20px]">
+               <div class=" w-[100%] h-[100%] flex  flex-wrap justify-center items-center gap-[20px_20px]">
+                <div class="card1 w-[400px] sm:w-[500px]  h-auto  bg-[#FFECED] flex justify-center items-center">
+                  <div class="card_left w-[300px] h-auto px-[35px] sm:px-[0px] flex justify-center items-center flex-col gap-[10px_0px]">
+                    <div class="text-[#C26166] text-xl sm:text-3xl font-semibold">Save Upto 35%</div>
+                    <div class="text-2xl sm:text-4xl text-[#173748] text-center font-bold">Meat or Chicken Offer</div>
+                    <div class="w-[150px] h-[40px] p-[0px_0px] sm:p-[10px_0px] text-center rounded-[10px] bg-[#7BBA26] text-white flex justify-center items-center cursor-pointer hover:bg-transparent hover:border-2 hover:border-[#7BBA26] hover:text-[#7BBA26]">Shop Now</div>
+                  </div>
+                  <div class="card_right w-[200px] h-auto bg-[#FFECED]">
+                    <img src="./Photo/IMg - chicken.png" class="rounded-md" alt="">
+                  </div>
+                </div>
+                <div class="card1 w-[400px] sm:w-[500px]  h-auto  bg-[#EDFFEA] flex justify-center items-center">
+                  <div class="card_left w-[300px] h-auto bg-[#EDFFEA] px-[35px] sm:px-[0px] flex justify-center items-center flex-col gap-[10px_0px]">
+                    <div class="text-[#7BBA26] text-xl sm:text-3xl font-semibold">Save Upto 35%</div>
+                    <div class="text-2xl sm:text-4xl text-[#173748] text-center font-bold">Best Organic Juice Offer</div>
+                    <div class="w-[150px] h-[40px] p-[0px_0px] sm:p-[10px_0px] text-center rounded-[10px] bg-[#7BBA26] text-white flex justify-center items-center cursor-pointer hover:bg-transparent hover:border-2 hover:border-[#7BBA26] hover:text-[#7BBA26]">Shop Now</div>
+                  </div>
+                  <div class="card_right w-[200px] h-auto bg-[#EDFFEA]">
+                    <img src="./Photo/IMg - pngegg.png" class="rounded-md" alt="">
+                  </div>
+                </div>
+               </div>
+       </div>
+      <!-- Section 9 -->
+
+      <!-- Section 10 -->
+       <div class="flex justify-center items-center">
+
+         <div class="w-full h-auto  m-auto flex justify-center items-center">
+           <div class="row_1 w-[100%] bg-[#FFEEDE] sm:w-[100%] h-auto 0  flex justify-center items-center flex-wrap">
+             <div class="row_left bg-[#FFEEDE] w-auto sm:w-[600px] px-[15px] h-auto flex justify-center items-center flex-col gap-[30px] py-[30px] order-2 lg:order-1">
+                          <div class="text-4xl sm:text-5xl font-semibold text-center">Subscribe our Newsletter For New Offers</div>
+                          <div class=" sm:w-[400px] h-[60px] bg-white flex justify-center items-center px-[10px]">
+                                   <input type="text" class="w-[75%] h-[100%] outline-none border-none">
+                                   <div class="bg-[#7BBA26] h-[30px] p-[10px_15px] flex justify-center items-center text-white hover:bg-transparent hover:border-2 hover:border-[#7BBA26] hover:text-[#7BBA26]">Subscribe</div>
+                          </div>
+             </div>
+             <div class="row_left w-auto sm:w-[500px] h-auto  flex justify-center items-center order-1 lg:order-2">
+               <img src="./Photo/pngegg (37) 2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Section 10 -->
+
+
+          <!--Section 11  -->
+          <div class="w-full  h-auto my-[15px]">
+            <div class="w-[95%]  h-auto m-auto flex justify-center items-center gap-[30px_50px] flex-wrap">
+                    <div class="w-[190px] h-auto">
+                      <img src="./Photo/1.png" alt="">
+                    </div>
+                    <div class="w-[190px] h-auto">
+                      <img src="./Photo/2.png" alt="">
+                    </div>
+                    <div class="w-[190px] h-auto">
+                      <img src="./Photo/3.png" alt="">
+                    </div>
+                    <div class="w-[190px] h-auto">
+                      <img src="./Photo/4.png"  alt="">
+                    </div>
+                    <div class="w-[190px] h-auto">
+                      <img src="./Photo/5.png" alt="">
+                    </div>
+            </div>
+          </div>
+          <!--Section 11  -->
+
+            <!-- Section 12 -->
+      <div class="section_2 w-full my-[5px] h-auto py-[20px]">
+        <div class="main_container w-[100%] h-[100%] m-auto flex flex-col justify-center items-center gap-[15px_0px]">
+          <div class="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-[#173748]">Our Latest News</div>
+          <div class="sm:text-2xl md:text-2xl lg:text-2xl text-center text-gray-500">
+            We Connect buyers & Sellers of Natural, Organic, Enviornmetnlly sound products.                               
+          </div>
+        </div>
+       </div>
+      <!-- Section 12 -->
+
+      <!-- Section 13 -->
+          <div class="w-full h-auto my-[30px]">
+               <div class="w-[90%] h-auto  m-auto flex justify-center items-center gap-[50px] flex-wrap">
+
+                <div class="cards1 w-[290px] h-[370px]">
+                  <div class="card_upper w-[100%] h-auto">
+                    <img src="./Photo/cc1.png" class="" alt="">
+                  </div>
+                  <div class="flex justify-center items-center flex-col space-y-1 px-[10px]">
+                    <div class="w-full flex justify-between items-center">
+                      <div class="text-xl text-[#7BBA26]"><span><i class="ri-calendar-2-line"></i></span>&nbsp;28 June 2021</div>
+                      <div class="text-gray-500">5 Comments</div>
+                    </div>
+                    <div class="text-xl">
+                      Lorem Ipsum is simply dummy text of the printing .
+                    </div>
+                    <div class="text-gray-400">
+                      It is a long established fact that a reader will be distracted by the readable content.....
+                    </div>
+                  </div>
+                </div>
+                <div class="cards1 w-[290px] h-[370px]">
+                  <div class="card_upper w-[100%] h-auto">
+                    <img src="./Photo/cc2.png" class="" alt="">
+                  </div>
+                  <div class="flex justify-center items-center flex-col space-y-1 px-[10px]">
+                    <div class="w-full flex justify-between items-center">
+                      <div class="text-xl text-[#7BBA26]"><span><i class="ri-calendar-2-line"></i></span>&nbsp;28 June 2021</div>
+                      <div class="text-gray-500">5 Comments</div>
+                    </div>
+                    <div class="text-xl">
+                      Lorem Ipsum is simply dummy text of the printing .
+                    </div>
+                    <div class="text-gray-400">
+                      It is a long established fact that a reader will be distracted by the readable content.....
+                    </div>
+                  </div>
+                </div>
+                <div class="cards1 w-[290px] h-[370px]">
+                  <div class="card_upper w-[100%] h-auto">
+                    <img src="./Photo/cc3.png" class="" alt="">
+                  </div>
+                  <div class="flex justify-center items-center flex-col space-y-1 px-[10px]">
+                    <div class="w-full flex justify-between items-center">
+                      <div class="text-xl text-[#7BBA26]"><span><i class="ri-calendar-2-line"></i></span>&nbsp;28 June 2021</div>
+                      <div class="text-gray-500">5 Comments</div>
+                    </div>
+                    <div class="text-xl">
+                      Lorem Ipsum is simply dummy text of the printing .
+                    </div>
+                    <div class="text-gray-400">
+                      It is a long established fact that a reader will be distracted by the readable content.....
+                    </div>
+                  </div>
+                </div>
+
+               </div>
+          </div>
+      <!-- Section 13 -->
+
+      <!-- Section 13.1 -->
+      <div class="w-full h-[100px] my-[5px] flex justify-center items-center">
+        <span class="w-[200px] h-[50px] text-center text-xl text-white bg-[#7BBA26] rounded-[10px] flex justify-center items-center hover:bg-transparent hover:border-2 hover:border-[#7BBA26] hover:text-[#7BBA26]">View More</span>
+      </div>
+      <!-- Section 13.1 -->
+
+      <!-- Section 14 -->
+
+         <center class="my-[25px]"><img src="./Photo/Logo Here.svg" class="cursor-pointer" alt=""></center>
+
+       <div class="w-full  h-auto">
+          <div class="w-[95%] h-[100%]  m-auto flex justify-center items-center flex-wrap gap-[100px]">
+
+            <div class="foot_1 w-[200px] h-[200px] space-y-3 cursor-pointer">
+              <div class="text-2xl font-semibold ">Quick Links</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Home</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Store</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">About Us</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Blog</div>   
+            </div>
+
+            <div class="foot_1 w-[200px] h-[300px] space-y-3 cursor-pointer">
+              <div class="text-2xl font-semibold">Information</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">About Us</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Delivery Information</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Privacy Policy</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Terms & Conditions</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Contact Us</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Site Map</div>
+            </div>
+            <div class="foot_1 w-[200px] h-[300px] space-y-3 cursor-pointer">
+              <div class="text-2xl font-semibold">Products</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Fruits</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Vegetables</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Dry Fruits</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Meat</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Salad</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">Fruit Juice</div>
+            </div>
+
+         
+            <div class="foot_1 w-[300px] h-[300px] space-y-3 cursor-pointer">
+              <div class="text-2xl font-semibold">Contact Us</div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">
+                <span class=""><i class="ri-map-pin-line text-[#7BBA26]"></i></span>&nbsp;Akshya Nagar 1st Block 1st Cross, Rammurthy 
+                nagar, Bangalore-560016
+              </div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">
+                <span class=""><i class="ri-phone-line text-[#7BBA26]"></i></span>&nbsp;+91 987 654 3210
+              </div>
+              <div class="text-xl text-gray-500 hover:text-[#7BBA26] ">
+                <span class=""><i class="ri-mail-line text-[#7BBA26]"></i></span>&nbsp;dummyemail@gmail.com
+              </div>
+            
+            </div>
+
+         
+
+          </div>
+       </div>
+      <!-- Section 14 -->
+    </body>
+    <script>
+      jQuery.noConflict();
+      jQuery(document).ready(function($){
+        
+        $(".side_navigation").hide();
+
+        $(".ri-menu-line").click(function(){
+           $(".side_navigation").slideToggle(600);
+        }) 
+
+      })
+    </script>
+    </html>
